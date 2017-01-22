@@ -14,11 +14,11 @@
 .nav-mask{
 	background: darkviolet;
 	border-radius: 50%;
-	height:25vw;
-	width: 25vw;
+	height:30vw;
+	width: 30vw;
 	position :absolute;
-	left: 5vw;
-	bottom:4vw;
+	left: 8vw;
+	bottom:7vw;
 	color: white;
 	justify-content: center;
 	display: flex;
@@ -46,11 +46,11 @@
 }
 .nav-mask2{
 	border-radius: 50%;
-	height:25vw;
-	width: 25vw;
+	height:30vw;
+	width: 30vw;
 	position :absolute;
-	left: 4vw;
-	bottom:3vw;
+	left: 8vw;
+	bottom:7vw;
 	background: rgba(220,220,220,0.6);
 	transform: scale(0);
 }

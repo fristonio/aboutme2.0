@@ -12,8 +12,8 @@ closebtn.onclick=function(){
 
 var openbtn=document.getElementById('nav-open');
 openbtn.onclick=function(){
-	closebtn.parentNode.style.width="25vw";
-	closebtn.parentNode.style.height="25vw"; 
+	closebtn.parentNode.style.width="30vw";
+	closebtn.parentNode.style.height="30vw"; 
 	var mask=document.getElementsByClassName('nav-mask2')[0];
 	mask.style.animation="navbounce 1s";
 	setTimeout(function(){closebtn.style.visibility="visible";},400);
