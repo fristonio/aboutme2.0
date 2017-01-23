@@ -2,6 +2,80 @@
 	margin: 0;
 	padding:0;
 }
+/*Navigationn bar*/
+.nav{
+	//display: none;
+	right: 0;
+	position:fixed;
+	height: 0vw;
+	width:0vw;
+	//background: tomato;
+	transition: 0.8s;
+}
+.nav-mask{
+	background: #555;
+	border-radius: 50%;
+	height:30vw;
+	width: 30vw;
+	position :absolute;
+	left: 8vw;
+	bottom:7vw;
+	color: white;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+}
+.nav-links{
+	padding-right: 5vw;
+}
+#nav-close{
+	position: absolute;
+	font-size: 24px;
+	color: white;
+	right: 0;
+	cursor: pointer;
+	padding: 10px;
+	transition: all 0.3s;
+	visibility: hidden;
+}
+#nav-open{
+	position:fixed;
+	font-size: 24px;
+	right:0;
+	color: white;
+	cursor: pointer;
+	padding: 10px;
+	//z-index: 1000;
+}
+.nav-mask2{
+	border-radius: 50%;
+	height:30vw;
+	width: 30vw;
+	position :absolute;
+	left: 8vw;
+	bottom:7vw;
+	background: rgba(220,220,220,0.6);
+	transform: scale(0);
+}
+@keyframes navbounce{
+		0% {
+		    transform: scaleX(0.1);
+		    opacity: 0;
+		  }
+		  60% {
+		    transform: scaleX(1);
+		    opacity: 1;
+		  }
+		  100% {
+		    transform: scaleX(0);
+		    opacity: 0;
+		  }
+}
+.nav-links h2.nav-head{
+	transform: translateX(6vw);
+	transition: 0.1s ease-out;
+}
+
 .pagehead{
 	background: black;
 	width: 100vw;
@@ -12,6 +86,7 @@
 	align-items: center;
 	text-align: center;
 	//transition: background 2s;
+	position: absolute;
 }
 .pagehead div{
 	text-align: center;
@@ -22,7 +97,7 @@
 	white-space: nowrap;
 	overflow: hidden;
 	text-align: center;
-	//animation: typethis 5s steps(76,end);
+	//animation: typethis 8s steps(76,end);
 }
 .typed{
 	display: flex;
@@ -30,4 +105,21 @@
 }
 @keyframes typethis{
 	from{width: 0;}
+}
+
+.followpage1{
+	height: 0vh;
+	position:absolute;
+	bottom: 0;
+	background: tomato;
+	width: 100vw;
+	transition: 1s ease-out;
+}
+.followpage2{
+	height: 0vh;
+	position:absolute;
+	bottom: 0;
+	background: purple;
+	width: 100vw;
+	transition: 1s ease-out;
 }
