@@ -111,15 +111,72 @@
 	height: 0vh;
 	position:absolute;
 	bottom: 0;
-	background: tomato;
+	background: #000;
 	width: 100vw;
 	transition: 1s ease-out;
+	background: url("./backimg.jpg");
+	background-position: center;
+	color: white;
 }
 .followpage2{
 	height: 0vh;
 	position:absolute;
 	bottom: 0;
-	background: purple;
+	background: black;
 	width: 100vw;
 	transition: 1s ease-out;
 }
+.followpage3{
+	height: 0vh;
+	position:absolute;
+	bottom: 0;
+	background: black;
+	width: 100vw;
+	transition: 1s ease-out;
+}
+
+.imgpack img{
+	position: absolute;
+	height: 45vh;
+	border: 2px white solid;
+	padding: 0.5vw;
+}
+.imgpack{
+	display: flex;
+	justify-content: center;
+	padding: 4.5%;
+}
+.image1{
+	//transform: translateX(-50%);
+	transform-origin: 0% 100% 0;
+	transform: rotateZ(-25deg) translateX(-50%) translateY(5vh); 
+	transition: 1s;
+	filter: brightness(0.5);
+}
+.image2{
+	//transform: translateX(50%);
+	transform-origin: 100% 100% 0;
+	transform: rotateZ(25deg) translateX(50%) translateY(5vh);
+	transition: 1s;
+	filter: brightness(0.5);
+}
+.image1:hover, .image2:hover, .image3:hover{
+	z-index: 100;
+	transition: 1s;
+}
+.abtme{
+	position: absolute;
+	padding-top: 55vh;
+	width: 100vw;
+}
+.abtme h1,h2,h4{
+	text-align: center;
+	color: white;
+}
+.abtme hr{
+	margin: 0 30vw;
+}
+.followpage2 h1{
+	text-align: center;
+}
+

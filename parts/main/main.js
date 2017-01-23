@@ -14,17 +14,25 @@ document.onkeydown=function(event){
 	if (event.keyCode==40) {
 		n+=1;
 		console.log(n);
-		if (n==3) {
+
+		if (n==4) {
 			alert("Stay in your limits :P");
-			n=2;
+			n=3;
 		}
 		else{
 		document.getElementsByClassName("web-page")[n].style.height="100vh";
+		setTimeout(function(){
+				document.getElementsByClassName('image')[0].classList.toggle('image1');
+				document.getElementsByClassName('image')[1].classList.toggle('image2');},1000);
 		}
+
 	}
 	if (event.keyCode==38) {
 		if (n>0) {
 			document.getElementsByClassName("web-page")[n].style.height="0vh";
+			setTimeout(function(){
+				document.getElementsByClassName('image')[0].classList.toggle('image1');
+				document.getElementsByClassName('image')[1].classList.toggle('image2');},1000);
 			n-=1;
 		}
 		else{
