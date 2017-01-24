@@ -7,7 +7,7 @@ window.onload=function(){
 		document.getElementById("typedmsg").style.visibility="visible";
 		document.getElementById("typedmsg").style.animation="typethis 6s steps(80,end)";
 	}, 2000);
-	//document.getElementsByClassName("pagehead")[0].style.background="url(./background.jpg)"
+	//setTimeout(function(){document.getElementsByClassName("pagehead")[0].style.background="url(./background.jpg)";},5000);
 }
 var n=0;
 document.onkeydown=function(event){
@@ -67,10 +67,20 @@ openbtn.onclick=function(){
 	var n=0;
 	setTimeout(function(){
 	var a=setInterval(function(){
-		if(n==4){clearInterval(a);}
+		if(n==5){clearInterval(a);}
 		else{
 			document.getElementsByClassName('nav-head')[n].style.transform="translateX(0)";
 			n++;
 		}
 	}, 100);},100);
 }
+
+document.getElementById("githubgo").onclick=function(){
+	alert('Told you not use mouse ..... NOW Reload');
+	document.getElementsByClassName('followpage2')[0].style.filter="blur(4px)";
+}
+
+document.addEventListener("contextmenu", function(e){
+    e.preventDefault();
+    alert('Told you not to go beyond your limits don\'t act smart Leave the mouse');
+}, false);

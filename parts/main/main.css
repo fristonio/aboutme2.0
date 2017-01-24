@@ -24,6 +24,7 @@
 	justify-content: center;
 	display: flex;
 	align-items: center;
+	padding-top: 2vw;
 }
 .nav-links{
 	padding-right: 5vw;
@@ -73,7 +74,8 @@
 }
 .nav-links h2.nav-head{
 	transform: translateX(6vw);
-	transition: 0.1s ease-out;
+	transition: 0.15s ease-out;
+	cursor: pointer;
 }
 
 .pagehead{
@@ -87,6 +89,7 @@
 	text-align: center;
 	//transition: background 2s;
 	position: absolute;
+	background-position: center;
 }
 .pagehead div{
 	text-align: center;
@@ -125,6 +128,8 @@
 	background: black;
 	width: 100vw;
 	transition: 1s ease-out;
+	background: url(./skill.jpg);
+	background-position: center;
 }
 .followpage3{
 	height: 0vh;
@@ -138,13 +143,13 @@
 .imgpack img{
 	position: absolute;
 	height: 45vh;
-	border: 2px white solid;
+	border: 2px #bbb solid;
 	padding: 0.5vw;
 }
 .imgpack{
 	display: flex;
 	justify-content: center;
-	padding: 4.5%;
+	padding: 3%;
 }
 .image1{
 	//transform: translateX(-50%);
@@ -160,23 +165,59 @@
 	transition: 1s;
 	filter: brightness(0.5);
 }
-.image1:hover, .image2:hover, .image3:hover{
+/*.image1:hover, .image2:hover, .image3:hover{
 	z-index: 100;
 	transition: 1s;
-}
+}*/
 .abtme{
 	position: absolute;
 	padding-top: 55vh;
 	width: 100vw;
 }
-.abtme h1,h2,h4{
+.abtme h1,h2,h3{
 	text-align: center;
 	color: white;
 }
 .abtme hr{
 	margin: 0 30vw;
 }
+
 .followpage2 h1{
 	text-align: center;
+	color: white;
+	padding-top: 1vw;
+	padding-right: 1vh;
 }
 
+.skillhead{
+	text-align: center;
+	color: white;
+	padding-bottom: 0.4vw;
+	border-bottom: 1px solid #bbb;
+	margin: 0 35%;
+}
+.skillpage{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 70vh;
+	flex-direction: column;
+	margin-top: 15vh
+}
+.skillpage h2{
+	color:#bbb;
+}
+#githubgo{
+	width: 7vw;
+	cursor: pointer;
+	padding-top: 2vw;
+}
+.followpage3 h1{
+	text-align: center;
+	font-weight: 800;
+	color: white;
+	padding-top: 2vw;
+	padding-bottom: 0.4vw;
+	border-bottom: 1px solid #bbb;
+	margin: 0 35%;
+}
