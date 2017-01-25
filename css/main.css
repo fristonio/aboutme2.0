@@ -2,6 +2,9 @@
 	margin: 0;
 	padding:0;
 }
+a{
+	text-decoration-style: none;
+}
 /*Navigationn bar*/
 .nav{
 	//display: none;
@@ -13,7 +16,7 @@
 	transition: 0.8s;
 }
 .nav-mask{
-	background: #555;
+	background: #222;
 	border-radius: 50%;
 	height:30vw;
 	width: 30vw;
@@ -76,6 +79,7 @@
 	transform: translateX(6vw);
 	transition: 0.15s ease-out;
 	cursor: pointer;
+	font-size: 1.3vw;
 }
 
 .pagehead{
@@ -117,7 +121,7 @@
 	background: #000;
 	width: 100vw;
 	transition: 1s ease-out;
-	background: url("./backimg.jpg");
+	background: url("../images/backimg.jpg");
 	background-position: center;
 	color: white;
 }
@@ -128,7 +132,7 @@
 	background: black;
 	width: 100vw;
 	transition: 1s ease-out;
-	background: url(./skill.jpg);
+	background: url("../images/skill.jpg");
 	background-position: center;
 }
 .followpage3{
@@ -193,6 +197,7 @@
 	color: white;
 	padding-top: 1vw;
 	padding-right: 1vh;
+	letter-spacing: 2px;
 }
 
 .skillhead{
@@ -225,7 +230,9 @@
 	padding-top: 2vw;
 	padding-bottom: 0.4vw;
 	border-bottom: 1px solid #bbb;
+	letter-spacing: 2px;
 	margin: 0 35%;
+
 }
 .gamil{
 	cursor: pointer;
@@ -236,12 +243,13 @@
 
 .odiv{
 	margin-top:2%;
-	margin-bottom: 0%;
+	margin-bottom: 3%;
 }
-.odiv h3{
+.odiv h2{
 	color: white;
-	font-size: 26px;
+	font-size: 28px;
 	text-align: center;
+	margin-bottom: 5%;
 }
 .add{
 	text-align: center;

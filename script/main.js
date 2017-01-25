@@ -16,7 +16,7 @@ document.onkeydown=function(event){
 		console.log(n);
 
 		if (n==4) {
-			alert("Stay in your limits :P");
+			alert("Not the way to go");
 			n=3;
 		}
 		else{
@@ -36,7 +36,7 @@ document.onkeydown=function(event){
 			n-=1;
 		}
 		else{
-			alert("Stay in your limits :P");
+			alert("Not the way to go  :P");
 			n=0;
 		}
 		console.log(n);
@@ -76,14 +76,16 @@ openbtn.onclick=function(){
 }
 
 document.getElementById("githubgo").onclick=function(){
-	alert('Told you not use mouse ..... NOW Reload');
+	alert('Told you not to use mouse ..... NOW Reload');
 	document.getElementsByClassName('followpage2')[0].style.filter="blur(4px)";
 }
 
 document.addEventListener("contextmenu", function(e){
     e.preventDefault();
-    alert('Told you not to go beyond your limits don\'t act smart Leave the mouse');
+    alert('Don\'t act smart Leave the mouse');
 }, false);
-document.getElementsByClassName('gmail').onclick=function(){
-	this.style.animate="flip";
+
+document.getElementsByClassName('nav-mask')[0].onclick=function(){
+	alert('Use keyboards arrow keys for navigation.....');
 }
+
