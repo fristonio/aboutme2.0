@@ -84,3 +84,6 @@ document.addEventListener("contextmenu", function(e){
     e.preventDefault();
     alert('Told you not to go beyond your limits don\'t act smart Leave the mouse');
 }, false);
+document.getElementsByClassName('gmail').onclick=function(){
+	this.style.animate="flip";
+}
